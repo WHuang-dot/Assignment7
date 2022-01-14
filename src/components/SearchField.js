@@ -8,7 +8,7 @@ const SearchField = (props) => {
     const [keyword,setKeyword] = useState('')
 
     const searchGif = () =>{
-        axios.get(`http://api.giphy.com/v1/gifs/search?q=${keyword}&api_key=9oAAgv5PsztE1QPOPVuCqoSCnOEjdwQe`).then(
+        axios.get(`https://api.giphy.com/v1/gifs/search?q=${keyword}&api_key=9oAAgv5PsztE1QPOPVuCqoSCnOEjdwQe`).then(
             (response) =>{
             props.setData(response.data)
             }
@@ -17,7 +17,7 @@ const SearchField = (props) => {
 
     const searchTrendingGif = () =>{
         console.log('fetched trending')
-        axios.get(`http://api.giphy.com/v1/gifs/trending?api_key=9oAAgv5PsztE1QPOPVuCqoSCnOEjdwQe`).then(
+        axios.get(`https://api.giphy.com/v1/gifs/trending?api_key=9oAAgv5PsztE1QPOPVuCqoSCnOEjdwQe`).then(
             (response) =>{
             props.setData(response.data)
             }
@@ -25,7 +25,7 @@ const SearchField = (props) => {
     }
 
     const randomGif = () =>{
-        axios.get(`http://api.giphy.com/v1/gifs/random?api_key=9oAAgv5PsztE1QPOPVuCqoSCnOEjdwQe`).then(
+        axios.get(`https://api.giphy.com/v1/gifs/random?api_key=9oAAgv5PsztE1QPOPVuCqoSCnOEjdwQe`).then(
             (response) =>{
             props.setData(response.data)
             }
