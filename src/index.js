@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import App from './components/App';
 import reportWebVitals from './reportWebVitals';
-import SearchField from './SearchField'
+import SearchField from './components/SearchField'
 
 ReactDOM.render(
   <App />,
