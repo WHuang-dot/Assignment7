@@ -8,10 +8,10 @@ import Gif from './Gif';
   const [gif,setGif] = useState([])
 
   return (
-    <>
+    <div>
     <SearchField data = {gif.data} setData = {setGif}/>
     <Gif data = {gif.data} setData = {setGif}/>
-    </>
+    </div>
   )
 }
 

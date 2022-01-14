@@ -1,6 +1,7 @@
 import axios from 'axios'
 import React, {useState} from 'react'
 import Gif from './Gif'
+import './SearchField.css'
 
 const SearchField = (props) => {
 
@@ -37,10 +38,11 @@ const SearchField = (props) => {
 
      return(
         <>
-        <div>
-        <h1>{keyword}</h1>
+        <div className='search'>
+        <h1>GIPHY-APP</h1>
         <input onChange={getKeyword} type="text" placeholder="Search.."></input>
         <button onClick={searchGif}>Search Gif</button>
+        <br></br>
         <button onClick={searchTrendingGif}>Trending</button>
         <button onClick={randomGif}>Random</button>
         </div>
